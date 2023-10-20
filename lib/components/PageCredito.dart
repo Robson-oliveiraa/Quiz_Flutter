@@ -25,8 +25,7 @@ class DesignDoQuizCrDito extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return 
-    SingleChildScrollView( 
+    return SingleChildScrollView(
       child: Column(
         children: [
           Container(
@@ -37,7 +36,11 @@ class DesignDoQuizCrDito extends StatelessWidget {
               gradient: LinearGradient(
                 begin: Alignment(0.21, -0.98),
                 end: Alignment(-0.21, 0.98),
-                colors: [Color(0xFF6ADAD7), Color(0xFF3C7B61), Color(0xFF224A3A)],
+                colors: [
+                  Color(0xFF6ADAD7),
+                  Color(0xFF3C7B61),
+                  Color(0xFF224A3A)
+                ],
               ),
             ),
             child: Stack(
@@ -141,7 +144,8 @@ class DesignDoQuizCrDito extends StatelessWidget {
                                     decoration: ShapeDecoration(
                                       color: const Color(0xFF139610),
                                       shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(1.50),
+                                        borderRadius:
+                                            BorderRadius.circular(1.50),
                                       ),
                                     ),
                                   ),
@@ -155,7 +159,8 @@ class DesignDoQuizCrDito extends StatelessWidget {
                                     decoration: ShapeDecoration(
                                       color: const Color(0xFF139610),
                                       shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(1.50),
+                                        borderRadius:
+                                            BorderRadius.circular(1.50),
                                       ),
                                     ),
                                   ),
@@ -169,7 +174,8 @@ class DesignDoQuizCrDito extends StatelessWidget {
                                     decoration: ShapeDecoration(
                                       color: const Color(0xFF139610),
                                       shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(1.50),
+                                        borderRadius:
+                                            BorderRadius.circular(1.50),
                                       ),
                                     ),
                                   ),
@@ -183,7 +189,8 @@ class DesignDoQuizCrDito extends StatelessWidget {
                                     decoration: ShapeDecoration(
                                       color: const Color(0xFF139610),
                                       shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(1.50),
+                                        borderRadius:
+                                            BorderRadius.circular(1.50),
                                       ),
                                     ),
                                   ),
@@ -209,7 +216,8 @@ class DesignDoQuizCrDito extends StatelessWidget {
                                     decoration: ShapeDecoration(
                                       color: const Color(0xFF139610),
                                       shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(1.50),
+                                        borderRadius:
+                                            BorderRadius.circular(1.50),
                                       ),
                                     ),
                                   ),
@@ -223,7 +231,8 @@ class DesignDoQuizCrDito extends StatelessWidget {
                                     decoration: ShapeDecoration(
                                       color: const Color(0xFF139610),
                                       shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(1.50),
+                                        borderRadius:
+                                            BorderRadius.circular(1.50),
                                       ),
                                     ),
                                   ),
@@ -237,7 +246,8 @@ class DesignDoQuizCrDito extends StatelessWidget {
                                     decoration: ShapeDecoration(
                                       color: const Color(0xFF139610),
                                       shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(1.50),
+                                        borderRadius:
+                                            BorderRadius.circular(1.50),
                                       ),
                                     ),
                                   ),
@@ -251,7 +261,8 @@ class DesignDoQuizCrDito extends StatelessWidget {
                                     decoration: ShapeDecoration(
                                       color: const Color(0xFF139610),
                                       shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(1.50),
+                                        borderRadius:
+                                            BorderRadius.circular(1.50),
                                       ),
                                     ),
                                   ),
@@ -265,7 +276,8 @@ class DesignDoQuizCrDito extends StatelessWidget {
                                     decoration: ShapeDecoration(
                                       color: const Color(0xFF139610),
                                       shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(1.50),
+                                        borderRadius:
+                                            BorderRadius.circular(1.50),
                                       ),
                                     ),
                                   ),
@@ -380,7 +392,7 @@ class DesignDoQuizCrDito extends StatelessWidget {
                           left: 0,
                           top: 59,
                           child: SizedBox(
-                            width: 141,
+                            width: 170,
                             height: 45,
                             child: Stack(
                               children: [
@@ -388,7 +400,7 @@ class DesignDoQuizCrDito extends StatelessWidget {
                                   left: 49,
                                   top: 14,
                                   child: Text(
-                                    'Jeff_brntz',
+                                    '@jeff_brntz',
                                     style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 14,
@@ -407,7 +419,8 @@ class DesignDoQuizCrDito extends StatelessWidget {
                                     height: 45,
                                     decoration: const BoxDecoration(
                                       image: DecorationImage(
-                                        image: AssetImage("assets/images/insta.png"),
+                                        image: AssetImage(
+                                            "assets/images/insta.png"),
                                         fit: BoxFit.fill,
                                       ),
                                     ),
@@ -465,7 +478,7 @@ class DesignDoQuizCrDito extends StatelessWidget {
                           left: 0,
                           top: 52,
                           child: SizedBox(
-                            width: 164,
+                            width: 190,
                             height: 45,
                             child: Stack(
                               children: [
@@ -477,7 +490,8 @@ class DesignDoQuizCrDito extends StatelessWidget {
                                     height: 45,
                                     decoration: const BoxDecoration(
                                       image: DecorationImage(
-                                        image: AssetImage("assets/images/insta.png"),
+                                        image: AssetImage(
+                                            "assets/images/insta.png"),
                                         fit: BoxFit.fill,
                                       ),
                                     ),
@@ -487,7 +501,7 @@ class DesignDoQuizCrDito extends StatelessWidget {
                                   left: 50,
                                   top: 14,
                                   child: Text(
-                                    'Robso_andre',
+                                    '@robso_andre',
                                     style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 14,
@@ -507,60 +521,60 @@ class DesignDoQuizCrDito extends StatelessWidget {
                   ),
                 ),
                 Positioned(
-                  left: 13,
-                  top: 13,
-                  child: InkWell(
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const MyApp()));
-                    },
-                    child: SizedBox(
-                      width: 74.48,
-                      height: 34,
-                      child: Stack(
-                        children: [
-                          Positioned(
-                            left: 0,
-                            top: 0,
-                            child: Container(
-                              width: 74.48,
-                              height: 34,
-                              decoration: ShapeDecoration(
-                                color: Colors.black,
-                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)),
-                              ),
-                            ),
-                          ),
-                          const Positioned(
-                            left: 15,
-                            top: 6,
-                            child: SizedBox(
-                              width: 45,
-                              height: 16,
-                              child: Text(
-                                'voltar',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 15,
-                                  fontFamily: 'Inder',
-                                  fontWeight: FontWeight.w400,
-                                  height: 0,
+                    left: 13,
+                    top: 13,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const MyApp()));
+                      },
+                      child: SizedBox(
+                        width: 74.48,
+                        height: 34,
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              left: 0,
+                              top: 0,
+                              child: Container(
+                                width: 74.48,
+                                height: 34,
+                                decoration: ShapeDecoration(
+                                  color: Colors.black,
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(6)),
                                 ),
                               ),
                             ),
-                          ),
-                        ],
+                            const Positioned(
+                              left: 15,
+                              top: 6,
+                              child: SizedBox(
+                                width: 45,
+                                height: 16,
+                                child: Text(
+                                  'voltar',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 15,
+                                    fontFamily: 'Inder',
+                                    fontWeight: FontWeight.w400,
+                                    height: 0,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
-                  )
-                ),
+                    )),
               ],
             ),
           ),
         ],
       ),
-      );
-    }
+    );
   }
+}

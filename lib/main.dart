@@ -25,8 +25,7 @@ class DesignDoQuizHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return 
-    SingleChildScrollView(
+    return SingleChildScrollView(
       child: Column(
         children: [
           Container(
@@ -37,7 +36,11 @@ class DesignDoQuizHome extends StatelessWidget {
               gradient: LinearGradient(
                 begin: Alignment(0.21, -0.98),
                 end: Alignment(-0.21, 0.98),
-                colors: [Color(0xFF6ADAD7), Color(0xFF3C7B61), Color(0xFF224A3A)],
+                colors: [
+                  Color(0xFF6ADAD7),
+                  Color(0xFF3C7B61),
+                  Color(0xFF224A3A)
+                ],
               ),
             ),
             child: Stack(
@@ -141,7 +144,8 @@ class DesignDoQuizHome extends StatelessWidget {
                                     decoration: ShapeDecoration(
                                       color: const Color(0xFF139610),
                                       shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(1.50),
+                                        borderRadius:
+                                            BorderRadius.circular(1.50),
                                       ),
                                     ),
                                   ),
@@ -155,7 +159,8 @@ class DesignDoQuizHome extends StatelessWidget {
                                     decoration: ShapeDecoration(
                                       color: const Color(0xFF139610),
                                       shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(1.50),
+                                        borderRadius:
+                                            BorderRadius.circular(1.50),
                                       ),
                                     ),
                                   ),
@@ -169,7 +174,8 @@ class DesignDoQuizHome extends StatelessWidget {
                                     decoration: ShapeDecoration(
                                       color: const Color(0xFF139610),
                                       shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(1.50),
+                                        borderRadius:
+                                            BorderRadius.circular(1.50),
                                       ),
                                     ),
                                   ),
@@ -183,7 +189,8 @@ class DesignDoQuizHome extends StatelessWidget {
                                     decoration: ShapeDecoration(
                                       color: const Color(0xFF139610),
                                       shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(1.50),
+                                        borderRadius:
+                                            BorderRadius.circular(1.50),
                                       ),
                                     ),
                                   ),
@@ -209,7 +216,8 @@ class DesignDoQuizHome extends StatelessWidget {
                                     decoration: ShapeDecoration(
                                       color: const Color(0xFF139610),
                                       shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(1.50),
+                                        borderRadius:
+                                            BorderRadius.circular(1.50),
                                       ),
                                     ),
                                   ),
@@ -223,7 +231,8 @@ class DesignDoQuizHome extends StatelessWidget {
                                     decoration: ShapeDecoration(
                                       color: const Color(0xFF139610),
                                       shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(1.50),
+                                        borderRadius:
+                                            BorderRadius.circular(1.50),
                                       ),
                                     ),
                                   ),
@@ -237,7 +246,8 @@ class DesignDoQuizHome extends StatelessWidget {
                                     decoration: ShapeDecoration(
                                       color: const Color(0xFF139610),
                                       shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(1.50),
+                                        borderRadius:
+                                            BorderRadius.circular(1.50),
                                       ),
                                     ),
                                   ),
@@ -251,7 +261,8 @@ class DesignDoQuizHome extends StatelessWidget {
                                     decoration: ShapeDecoration(
                                       color: const Color(0xFF139610),
                                       shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(1.50),
+                                        borderRadius:
+                                            BorderRadius.circular(1.50),
                                       ),
                                     ),
                                   ),
@@ -265,7 +276,8 @@ class DesignDoQuizHome extends StatelessWidget {
                                     decoration: ShapeDecoration(
                                       color: const Color(0xFF139610),
                                       shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(1.50),
+                                        borderRadius:
+                                            BorderRadius.circular(1.50),
                                       ),
                                     ),
                                   ),
@@ -438,5 +450,5 @@ class DesignDoQuizHome extends StatelessWidget {
         ],
       ),
     );
-    }
   }
+}

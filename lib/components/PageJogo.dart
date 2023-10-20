@@ -5,10 +5,8 @@ void main() {
   runApp(const MyPageJogo());
 }
 
-
 class MyPageJogo extends StatelessWidget {
   const MyPageJogo({super.key});
-
 
   @override
   Widget build(BuildContext context) {
@@ -61,6 +59,37 @@ class _HollowScreenState extends State<HollowScreen> {
       'options': ['FORJADOR', 'BRETTA', 'TISO', 'QUIRREL'],
       'correctOption': 'FORJADOR',
     },
+    //NOVO
+        {
+      'question': 'Quem é esse personagem?',
+      'imagePath': 'assets/images/iselda.png',
+      'options': ['ISELDA', 'HOLLOW', 'QUIRREL', 'SLY'],
+      'correctOption': 'ISELDA',
+    },
+    {
+      'question': 'Quem é esse personagem?',
+      'imagePath': 'assets/images/hornet.png',
+      'options': ['HOLLOW', 'QUIRREL', 'ISELDA', 'HORNET'],
+      'correctOption': 'HORNET',
+    },
+    {
+      'question': 'Quem é esse personagem?',
+      'imagePath': 'assets/images/cloth.png',
+      'options': ['MYLA', 'SLY', 'CLOTH', 'QUIRREL'],
+      'correctOption': 'CLOTH',
+    },
+    {
+      'question': 'Quem é esse personagem?',
+      'imagePath': 'assets/images/myla.png',
+      'options': ['QUIRREL', 'MYLA', 'CLOTH', 'HOLLOW'],
+      'correctOption': 'MYLA',
+    },
+    {
+      'question': 'Quem é esse personagem?',
+      'imagePath': 'assets/images/rei.png',
+      'options': ['REI PÁLIDO', 'BRETTA', 'MYLA', 'QUIRREL'],
+      'correctOption': 'REI PÁLIDO',
+    },
   ];
 
   int currentQuestionIndex = 0;
@@ -83,7 +112,8 @@ class _HollowScreenState extends State<HollowScreen> {
   void selectAnswer(String selectedOption) {
     if (!answerSelected) {
       setState(() {
-        if (selectedOption == questions[currentQuestionIndex]['correctOption']) {
+        if (selectedOption ==
+            questions[currentQuestionIndex]['correctOption']) {
           pontos++;
         }
         answerSelected = true;
@@ -98,7 +128,8 @@ class _HollowScreenState extends State<HollowScreen> {
         const begin = Offset(1.0, 0.0);
         const end = Offset.zero;
         const curve = Curves.easeInOut;
-        var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+        var tween =
+            Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
         var offsetAnimation = animation.drive(tween);
         return SlideTransition(position: offsetAnimation, child: child);
       },
@@ -109,13 +140,13 @@ class _HollowScreenState extends State<HollowScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment(0.21, -0.98),
-                end: Alignment(-0.21, 0.98),
-                colors: [Color(0xFF6ADAD7), Color(0xFF3C7B61), Color(0xFF224A3A)],
-              ),
-            ),
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment(0.21, -0.98),
+            end: Alignment(-0.21, 0.98),
+            colors: [Color(0xFF6ADAD7), Color(0xFF3C7B61), Color(0xFF224A3A)],
+          ),
+        ),
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -142,20 +173,31 @@ class _HollowScreenState extends State<HollowScreen> {
                       child: ElevatedButton(
                         onPressed: () {
                           if (!answerSelected) {
-                            selectAnswer(
-                                questions[currentQuestionIndex]['options'][index]);
+                            selectAnswer(questions[currentQuestionIndex]
+                                ['options'][index]);
                           }
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: answerSelected
-                              ? questions[currentQuestionIndex]['correctOption'] ==
-                                      questions[currentQuestionIndex]['options'][index]
+                              ? questions[currentQuestionIndex]
+                                          ['correctOption'] ==
+                                      questions[currentQuestionIndex]['options']
+                                          [index]
                                   ? Colors.green
                                   : Colors.red
                               : null,
                         ),
-                        child:
-                            Text(questions[currentQuestionIndex]['options'][index]),
+                        child: Text(
+                          questions[currentQuestionIndex]['options'][index],
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontFamily: 'Inder',
+                            fontWeight: FontWeight.w400,
+                            height: 0,
+                            letterSpacing: 4,
+                          ),
+                        ),
                       ),
                     ),
                   );
@@ -165,9 +207,18 @@ class _HollowScreenState extends State<HollowScreen> {
               ElevatedButton(
                 onPressed: showNextQuestion,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFFC1C1C1)
+                    backgroundColor: const Color(0xFF333333)),
+                child: const Text(
+                  'Próxima Pergunta',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontFamily: 'Inder',
+                    fontWeight: FontWeight.w400,
+                    height: 0,
+                    letterSpacing: 4,
+                  ),
                 ),
-                child: const Text('Próxima Pergunta'),
               ),
             ],
           ),
@@ -185,67 +236,105 @@ class TelaFinal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: 
-      SingleChildScrollView( 
-        child: Column(
-          children: [
-            Container(
-              width: 420,
-              height: 800,
-              padding: const EdgeInsets.only(top: 127, bottom: 295),
-              clipBehavior: Clip.antiAlias,
-              decoration: const BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment(0.00, -1.00),
-                  end: Alignment(0, 1),
-                  colors: [Color(0xFF6ADAD7), Color(0xFF3C7B61), Color(0xFF224A3A)],
-                ),
-              ),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Container(
-                    width: 360,
-                    height: 259,
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage("assets/images/Ohomilho.png"),
-                        fit: BoxFit.fill,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 31),
-                  Text(
-                    'Parabéns \nVocê fez $pontos ponto(s)',
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 36,
-                      fontFamily: 'Inter',
-                      fontWeight: FontWeight.w400,
-                      height: 1.2,
-                    ),
-                  ),
+        body: SingleChildScrollView(
+      child: Column(
+        children: [
+          Container(
+            width: 430,
+            height: 830,
+            padding: const EdgeInsets.only(top: 127, bottom: 295),
+            clipBehavior: Clip.antiAlias,
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment(0.00, -1.00),
+                end: Alignment(0, 1),
+                colors: [
+                  Color(0xFF6ADAD7),
+                  Color(0xFF3C7B61),
+                  Color(0xFF224A3A)
                 ],
               ),
             ),
-            const SizedBox(height: 16),
-            GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const MyApp(),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  width: 360,
+                  height: 205,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage("assets/images/Ohomilho.png"),
+                      fit: BoxFit.fill,
+                    ),
                   ),
-                );
-              },
-              child: const Text('Voltar'),
+                ),
+                const SizedBox(height: 31),
+                Text(
+                  'Parabéns \nVocê fez $pontos ponto(s)',
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 36,
+                    fontFamily: 'Inter',
+                    fontWeight: FontWeight.w400,
+                    height: 1.2,
+                  ),
+                ),
+                Positioned(
+                  left: 118,
+                  top: 600,
+                  child: InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const MyApp()));
+                      },
+                      child: SizedBox(
+                        width: 200,
+                        height: 70,
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              left: 0,
+                              top: 0,
+                              child: Container(
+                                width: 200,
+                                height: 50,
+                                decoration: ShapeDecoration(
+                                  color: const Color(0xFF1A1A1A),
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(10),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            const Positioned(
+                              left: 40,
+                              top: 12,
+                              child: Text(
+                                'VOLTAR',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  fontFamily: 'Inder',
+                                  fontWeight: FontWeight.w400,
+                                  height: 0,
+                                  letterSpacing: 4,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      )),
+                ),
+              ],
             ),
-          ],
-        ),
-    )
-    );
+          ),
+        ],
+      ),
+    ));
   }
 }
